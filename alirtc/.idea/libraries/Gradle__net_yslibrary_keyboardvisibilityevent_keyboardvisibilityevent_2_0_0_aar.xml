@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/keyboardvisibilityevent-2.0.0.aar/b02eaefa717c2f978c91d3391701ed41/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/keyboardvisibilityevent-2.0.0.aar/b02eaefa717c2f978c91d3391701ed41/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.yslibrary.keyboardvisibilityevent/keyboardvisibilityevent/2.0.0/d5b8befe4ee03d3faacb90128bdcc82e7578819/keyboardvisibilityevent-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

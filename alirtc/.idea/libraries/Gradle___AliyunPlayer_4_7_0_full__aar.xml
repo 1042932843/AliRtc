@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: :AliyunPlayer-4.7.0-full:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-AliyunPlayer-4.7.0-full.aar/7576c18887bd4e6895398c774e44729d/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-AliyunPlayer-4.7.0-full.aar/7576c18887bd4e6895398c774e44729d/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-AliyunPlayer-4.7.0-full.aar/7576c18887bd4e6895398c774e44729d/jars/libs/AlivcCore.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

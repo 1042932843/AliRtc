@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../AppUpdate/AppUpdate.iml" filepath="$PROJECT_DIR$/../AppUpdate/AppUpdate.iml" group="Education/AppUpdate" />
+      <module fileurl="file://$PROJECT_DIR$/../Education.iml" filepath="$PROJECT_DIR$/../Education.iml" group="Education" />
+      <module fileurl="file://$PROJECT_DIR$/../app/Education-Education.iml" filepath="$PROJECT_DIR$/../app/Education-Education.iml" group="Education/Education" />
+      <module fileurl="file://$PROJECT_DIR$/alirtc.iml" filepath="$PROJECT_DIR$/alirtc.iml" group="Education/alirtc" />
+      <module fileurl="file://$PROJECT_DIR$/../exerciseanalalysis/exerciseanalalysis.iml" filepath="$PROJECT_DIR$/../exerciseanalalysis/exerciseanalalysis.iml" group="Education/exerciseanalalysis" />
+      <module fileurl="file://$PROJECT_DIR$/../jlatexmath/jlatexmath.iml" filepath="$PROJECT_DIR$/../jlatexmath/jlatexmath.iml" group="Education/jlatexmath" />
+      <module fileurl="file://$PROJECT_DIR$/../singsoundlib/singsoundlib.iml" filepath="$PROJECT_DIR$/../singsoundlib/singsoundlib.iml" group="Education/singsoundlib" />
+    </modules>
+  </component>
+</project>
