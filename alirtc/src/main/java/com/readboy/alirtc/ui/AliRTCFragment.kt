@@ -68,7 +68,7 @@ class AliRTCFragment : Fragment() {
     companion object {
         private const val USER_ID = "userId"
         private const val USER_NAME = "userName"
-        private const val CHANNEL = "channel"
+        private const val CHANNEL = "channel"//房间号
 
         @JvmStatic
         fun newInstance(userName:String,channel: String,mRtcAuthInfo:RTCAuthInfo,onStatusChangeListener:OnStatusChangeListener): AliRTCFragment =
