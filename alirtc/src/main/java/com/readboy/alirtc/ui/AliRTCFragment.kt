@@ -28,7 +28,7 @@ import com.readboy.alirtc.adapter.RtcAdapter
 import com.readboy.alirtc.bean.ChartUserBean
 import com.readboy.alirtc.bean.RTCAuthInfo
 import com.readboy.alirtc.utils.AliRtcConstants
-import com.readboy.alirtc.utils.ThreadUtils.runOnUiThread
+
 import kotlinx.android.synthetic.main.fragment_rtc.*
 import org.webrtc.alirtcInterface.ALI_RTC_INTERFACE.AliRTCSDK_Client_Role
 import org.webrtc.alirtcInterface.ALI_RTC_INTERFACE.AliRtcStats
@@ -200,15 +200,15 @@ class AliRTCFragment : Fragment() {
     }
 
     private fun updateRemoteDisplay(uid: String, at: AliRtcAudioTrack, vt: AliRtcVideoTrack) {
-        runOnUiThread(Runnable {
+        activity?.runOnUiThread {
             if (null == mAliRtcEngine||uid=="admin_android") {//助教的不需要更新显示
-                return@Runnable
+                return@runOnUiThread
             }
             val remoteUserInfo = mAliRtcEngine!!.getUserInfo(uid)
             // 如果没有，说明已经退出了或者不存在。则不需要添加，并且删除
             if (remoteUserInfo == null) { // remote user exit room
                 Log.e("RTC", "updateRemoteDisplay remoteUserInfo = null, uid = $uid")
-                return@Runnable
+                return@runOnUiThread
             }
             val chartUserBean=ChartUserBean()
             chartUserBean.mUserId=remoteUserInfo.userID
@@ -245,14 +245,14 @@ class AliRTCFragment : Fragment() {
 
 
 
-        })
+        }
     }
 
 
 
 
     private fun removeRemoteUser(uid: String) {
-        runOnUiThread {
+        activity?.runOnUiThread {
             if (null == mAliRtcEngine) {
                 return@runOnUiThread
             }
@@ -296,7 +296,7 @@ class AliRTCFragment : Fragment() {
      * @param error 错误码
      */
     private fun noSessionExit(error: Int) {
-        runOnUiThread {
+        activity?.runOnUiThread {
             context?.let {
                 AlertDialog.Builder(it)
                         .setTitle("ErrorCode : $error")
@@ -529,7 +529,7 @@ class AliRTCFragment : Fragment() {
          * @param i
          */
         override fun onBye(i: Int) {
-            runOnUiThread {
+            activity?.runOnUiThread {
                 Toast.makeText(context,"您被终止了连麦",Toast.LENGTH_SHORT).show()
                 disconnect()
             }
