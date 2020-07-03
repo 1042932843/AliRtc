@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() ,AliRTCFragment.OnStatusChangeListener{
         //mRtcAuthInfo.data.userid=it.aliyun?.userid
         //mRtcAuthInfo.data.gslb=it.aliyun?.gslb!!
         //mRtcAuthInfo.data.token=it.aliyun?.token
+        //使用前请自行申请Mannifest相关权限，本demo只作kt版本实现参考->AliRTCFragment
         val fragment= AliRTCFragment.newInstance("dusky","10086",mRtcAuthInfo,this)
         supportFragmentManager.beginTransaction()
             .replace(R.id.container, fragment, TAG_ROOM_FRAG_ALI)
